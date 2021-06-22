@@ -1,0 +1,81 @@
+body{
+  background: #0012
+}
+.container{
+  position:relative;
+  margin-top: 5%;
+}
+
+h1{
+  width: 100%;
+  text-align: center;
+}
+
+form{
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  /*border: 1px solid;*/
+  border-radius: 15px;
+  padding: 15px;
+  background: #ffffff;
+}
+.required{
+  color:red;
+  font-weight: bold;
+}
+
+.border-red{ border: 1px solid red; }
+
+.msg{
+  position: relative;
+  width: 100%;
+  color: red;
+}
+.msg-green{
+  color: green;
+}
+
+.hidden{
+	display: none;
+}
+
+[id^=ui-id-], .ui-menu-item{
+  display: none;
+}
+
+/*============================================================
+  == ESCRITORIO GRANDE (LG revisamos en 1366px en adelante) ==
+  ============================================================*/
+@media (min-width: 1200px){
+    .col-lg-0{
+        display: none;
+    }
+}
+
+/*=================================================
+  == ESCRITORIO MEDIANO (MD revisamos en 1024px) ==
+  =================================================*/
+@media (max-width: 1199px) and (min-width: 992px){
+    .col-md-0{
+        display: none;
+    }
+}
+
+  /*================================================================
+  == ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px) ==
+  ==================================================================*/
+@media (max-width: 991px) and (min-width: 769px){
+    .col-sm-0{
+        display: none;
+    }
+}
+
+  /*=================================
+  == MOVIL (XS revisamos en 320px) ==
+  ===================================*/
+@media (max-width: 768px){
+    .col-xs-0{
+        display: none;
+    }
+}
